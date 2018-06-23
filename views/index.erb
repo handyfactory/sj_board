@@ -1,0 +1,10 @@
+<form action = "/create">
+    <input type = "text" name = "title">
+    <input type = "text" name = "content">
+    <input type = "submit">
+</form>
+
+<%@post.reverse.each do |b| %>
+    제목 : <%=b.title%><br>
+    내용 : <%=b.content%><br>
+<%end%>
